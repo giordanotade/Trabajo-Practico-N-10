@@ -1,0 +1,297 @@
+html {
+  background-color: #002347;
+  font-family: DejaVu Sans Mono, monospace;
+}
+
+@keyframes agrandar {
+  0% {
+    background-color: #003d52;
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: #003d52;
+    transform: scale(2);
+  }
+}
+
+.container-tabla {
+  margin-top: 18px;
+}
+
+.periodo {
+  display: flex;
+}
+
+/*hola tadeo*/
+/*que onda*/
+/*que andas haciendo por estos lares?*/
+/*andaba paseando por acá*/
+/*lares - Wikcionario, el diccionario libre
+2: Terrenos o propiedades de uno mismo. Ejemplo: (...) «Yo vi que no eran tu mansión mis lares ...*/
+/*Ah...*/
+/*si*/
+
+.elemento {
+  margin-bottom: 5px;
+  margin-right: 8px;
+  height: 48px;
+  width: 53px;
+  border-radius: 7px;
+  border: solid 5px;
+}
+
+.elemento:hover {
+  cursor: pointer;
+  box-shadow: 0em 1em 3em rgb(0, 0, 0);
+  transform: translateY(-12px);
+  background-color: #003d52;
+  animation-name: agrandar;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -15px;
+  font-size: 26px;
+  margin-bottom: -13px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.numero-masico {
+  margin-top: 8px;
+  font-size: 7px;
+}
+
+.numero-atomico {
+  font-weight: 600;
+  font-size: 10px;
+  margin-top: -1px;
+  margin-left: 2px;
+  margin-bottom: 8px;
+}
+
+.nombre-elemento {
+  font-size: 9px;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.periodo-superior {
+  justify-content: space-between;
+}
+
+.sub-periodo {
+  display: flex;
+}
+
+/* COLORSITOS*/
+.desconocidas {
+  color: #ededed;
+}
+
+.metal {
+  color: #c7aff3;
+}
+
+.gases-inertes {
+  color: #cf86f9;
+}
+
+.postransicionales {
+  color: #7be0ad;
+
+}
+
+.lantanidos {
+  color: #FDFFB6;
+}
+
+.metaloide {
+  color: #fae588;
+  ;
+}
+
+.actinidos {
+  color: #FFADAD;
+}
+
+.alcalinoterreos {
+  color: #7be4f9;
+}
+
+.alcalino {
+  color: #ffb3e7;
+}
+
+.no-metal {
+  color: #fdba96;
+}
+
+/*ACA TERMINAN LOS COLORCITOS DE LAS CATEGORIAS*/
+
+.intervalo {
+  margin-bottom: 5px;
+  margin-right: 8px;
+  height: 48px;
+  width: 53px;
+  border-radius: 7px;
+  border: solid 5px;
+  text-align: center;
+  background-color: transparent !important;
+  font-size: 8px;
+  transform: translateY(-0px);
+}
+
+.intervalo:hover {
+  transform: translateY(-0px);
+  box-shadow: 0em 0em 0em;
+  cursor: default;
+}
+
+.num-intervalo {
+  margin-top: 33%;
+}
+
+.penultima-fila {
+  justify-content: flex-end;
+  display: flex;
+  margin-top: 45px;
+}
+
+.ultima-fila {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width:768px) {
+
+  @keyframes agrandar {
+    0% {
+      background-color: #003d52;
+      transform: scale(0.7);
+    }
+
+    100% {
+      background-color: #003d52;
+      transform: scale(2);
+    }
+  }
+
+  .container-tabla {
+    margin-top: 175px;
+  }
+
+  .periodo {
+    margin-left: -11px;
+    flex-wrap: wrap;
+    width: 858px;
+  }
+
+  .elemento {
+    transform: scale(0.7);
+    margin-right: -15px;
+    margin-bottom: -12px;
+  }
+
+  .elemento:hover {
+    background-color: #003d52;
+    z-index: 2;
+  }
+
+  .intervalo {
+    transform: scale(0.7);
+    margin-right: -15px;
+    margin-bottom: -12px;
+  }
+
+  .penultima-fila {
+    margin-top: 40px;
+    width: 842px;
+  }
+
+  .ultima-fila {
+    width: 842px;
+  }
+
+  .intervalo:hover {
+    transform: translateY(-0px);
+    box-shadow: 0em 0em 0em;
+    cursor: default;
+  }
+}
+
+@media screen and (max-width:426px) {
+  @keyframes agrandar {
+    0% {
+      transform: scale(2);
+    }
+
+    100% {
+      transform: scale(7);
+    }
+  }
+
+  .container-tabla {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .periodo {
+    flex-flow: column;
+  }
+
+  .elemento {
+    transform: scale(2);
+    margin: 45px;
+  }
+
+  .intervalo {
+    transform: scale(2);
+    margin: 45px;
+  }
+
+  .penultima-fila {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .ultima-fila {
+    flex-flow: column;
+    margin-top: -20px;
+  }
+
+  .columna-der {
+    left: 0px;
+  }
+
+  .helio {
+    left: 0px;
+  }
+
+  .periodo-superior {
+    justify-content: initial;
+  }
+
+  .periodo {
+    flex-flow: column;
+  }
+
+  .sub-periodo {
+    display: initial;
+    margin-bottom: -45px;
+  }
+
+  .elementos-juntos {
+    margin-bottom: 90px;
+  }
+
+  .helio {
+    margin-top: 1px;
+  }
+}
