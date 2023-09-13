@@ -47,7 +47,7 @@ html {
   transform: translateY(-12px);
   background-color: #003d52;
   animation-name: agrandar;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -64,21 +64,22 @@ h3 {
 }
 
 .numero-masico {
-  margin-top: 8px;
-  font-size: 7px;
+  margin-top: 9px;
+  font-size: 6px;
 }
 
 .numero-atomico {
   font-weight: 600;
   font-size: 10px;
-  margin-top: -1px;
-  margin-left: 2px;
-  margin-bottom: 8px;
+  margin-top: 1px;
+  margin-left: 4px;
+  margin-bottom: 7px;
 }
 
 .nombre-elemento {
-  font-size: 9px;
-  margin-bottom: -10px;
+  font-size: 8px;
+  margin-top: 10px;
+  margin-bottom: -11px;
   text-align: center;
 }
 
@@ -169,6 +170,8 @@ h3 {
   justify-content: flex-end;
 }
 
+/* RESPONSIVE TABLET */
+
 @media screen and (max-width:768px) {
 
   @keyframes agrandar {
@@ -179,7 +182,7 @@ h3 {
 
     100% {
       background-color: #003d52;
-      transform: scale(2);
+      transform: scale(3);
     }
   }
 
@@ -190,7 +193,7 @@ h3 {
   .periodo {
     margin-left: -11px;
     flex-wrap: wrap;
-    width: 858px;
+    width: 853px;
   }
 
   .elemento {
@@ -218,13 +221,9 @@ h3 {
   .ultima-fila {
     width: 842px;
   }
-
-  .intervalo:hover {
-    transform: translateY(-0px);
-    box-shadow: 0em 0em 0em;
-    cursor: default;
-  }
 }
+
+/* RESPONSIVE MÓVIL */
 
 @media screen and (max-width:426px) {
   @keyframes agrandar {
@@ -233,65 +232,40 @@ h3 {
     }
 
     100% {
-      transform: scale(7);
+      transform: scale(3);
     }
   }
 
-  .container-tabla {
-    margin-top: 40px;
-    display: flex;
+  .container-tabla{
+    margin-top: -5px;
+    height: min-content;
   }
 
-  .periodo {
-    flex-flow: column;
+  .elemento{
+    transform: scale(1.2);
+    margin: 9px;
   }
 
-  .elemento {
-    transform: scale(2);
-    margin: 45px;
+  .intervalo{
+    transform: scale(1.2);
+    margin: 7px;
   }
 
-  .intervalo {
-    transform: scale(2);
-    margin: 45px;
+  .periodo{
+    width: 1446px;
   }
 
-  .penultima-fila {
-    flex-flow: column;
-    align-items: flex-start;
+  .penultima-fila{
+    width: 1430px;
   }
 
-  .ultima-fila {
-    flex-flow: column;
-    margin-top: -20px;
+  .ultima-fila{
+    width: 1430px;
   }
 
-  .columna-der {
-    left: 0px;
-  }
-
-  .helio {
-    left: 0px;
-  }
-
-  .periodo-superior {
-    justify-content: initial;
-  }
-
-  .periodo {
-    flex-flow: column;
-  }
-
-  .sub-periodo {
-    display: initial;
-    margin-bottom: -45px;
-  }
-
-  .elementos-juntos {
-    margin-bottom: 90px;
-  }
-
-  .helio {
-    margin-top: 1px;
+  .intervalo:hover {
+    transform: scale(1.2);
+    box-shadow: 0em 0em 0em;
+    cursor: default;
   }
 }
