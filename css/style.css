@@ -23,6 +23,14 @@ html {
   display: flex;
 }
 
+.periodo-superior {
+  justify-content: space-between;
+}
+
+.sub-periodo {
+  display: flex;
+}
+
 /*hola tadeo*/
 /*que onda*/
 /*que andas haciendo por estos lares?*/
@@ -83,13 +91,6 @@ h3 {
   text-align: center;
 }
 
-.periodo-superior {
-  justify-content: space-between;
-}
-
-.sub-periodo {
-  display: flex;
-}
 
 /* COLORSITOS*/
 .desconocidas {
@@ -228,40 +229,51 @@ h3 {
 @media screen and (max-width:426px) {
   @keyframes agrandar {
     0% {
-      transform: scale(3.5);
+      transform: scale(2.5);
     }
 
     100% {
-      transform: scale(8);
+      transform: scale(9);
     }
   }
 
   .container-tabla{
-    margin-top: 200px;
+    display: flex;
+    margin-left: 35px;
+    margin-top: 150px;
   }
 
   .elemento{
-    transform: scale(3.5);
-    margin: 83px;
-    margin-right: 90px;
+    transform: scale(2.5);
+    margin: 35px;
+    margin-bottom: 70px;
+    margin-right: 80px;
   }
 
   .intervalo{
-    transform: scale(3.5);
-    margin: 83px;
+    transform: scale(2.5);
+    margin: 35px;
+    margin-bottom: 70px;
   }
 
-  .periodo{
-    margin-left: 10px;
-    width: 4236px;
+  .periodo-superior{
+    margin-bottom: auto;
+    align-items: flex-start;
+  }
+
+  .sub-periodo{
+    flex-wrap: wrap;
   }
 
   .penultima-fila{
-    width: 4240px;
+    margin-bottom: auto;
+    margin-top:initial;
+    flex-wrap: wrap;
   }
 
   .ultima-fila{
-    width: 4240px;
+    margin-bottom: auto;
+    flex-wrap: wrap;
   }
 
   .intervalo:hover {
